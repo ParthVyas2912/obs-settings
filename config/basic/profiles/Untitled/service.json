@@ -1,0 +1,10 @@
+{
+  "type": "rtmp_common",
+  "settings": {
+    "service": "YouTube - RTMPS",
+    "protocol": "RTMPS",
+    "server": "about:blank",
+    "bwtest": false,
+    "key": ""
+  }
+}

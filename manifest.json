@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-11-11T14:06:57.797213+00:00",
+  "source": "C:\\Users\\parth\\AppData\\Roaming\\obs-studio",
+  "assets": [
+    {
+      "original": "C:/Users/parth/Desktop/dev/Rule-Of-Thirds-Transparent-White-1920x1080.png",
+      "file": "assets/8589b67b1c62-Rule-Of-Thirds-Transparent-White-1920x1080.png"
+    },
+    {
+      "original": "C:/Users/parth/Desktop/destination faang/live/custom pulse.lua",
+      "file": "assets/dcf14c794125-custom pulse.lua"
+    }
+  ],
+  "external_dependencies": {
+    "C:/Users/parth/Desktop/destination faang/freecodecamp master dsa mega course/final videos/Final videos/DSA mega course 50 hours.mp4": {
+      "setting": "local_file",
+      "exists_on_original_machine": true,
+      "included": false
+    },
+    "C:/Program Files/Common Files/VST2/Voxengo/Marvel GEQ.dll": {
+      "setting": "plugin_path",
+      "exists_on_original_machine": true,
+      "included": false
+    },
+    "C:/Users/parth/Desktop/dev/Rule-Of-Thirds-Transparent-White-1920x1080.png": {
+      "setting": "file",
+      "exists_on_original_machine": true,
+      "included": true
+    },
+    "C:/Users/parth/Desktop/destination faang/live/custom pulse.lua": {
+      "setting": "path",
+      "exists_on_original_machine": true,
+      "included": true
+    }
+  },
+  "redacted_settings": [
+    "global.ini/General/InstallGUID",
+    "global.ini/BasicWindow/ExtraBrowserDocks",
+    "user.ini/General/InstallGUID",
+    "user.ini/BasicWindow/ExtraBrowserDocks",
+    "user.ini/OBSWebSocket/ServerPassword",
+    "basic\\profiles\\Untitled\\basic.ini/Panels/CookieId",
+    "basic\\profiles\\Untitled\\basic.ini/YouTube",
+    "basic\\profiles\\Untitled\\basic.ini/Auth",
+    "basic\\profiles\\Untitled\\basic.ini/YouTube - RTMPS",
+    "basic\\profiles\\Untitled\\basic.ini/YouTube - RTMP",
+    "basic\\profiles\\Untitled\\service.json/settings/server",
+    "basic\\profiles\\Untitled\\service.json.bak/settings/server",
+    "basic\\scenes\\Live__cam__mic.json.bak/sources/3/settings/url",
+    "basic\\scenes\\Live__cam__mic.json.bak/sources/5/settings/url",
+    "basic\\scenes\\Resume_review.json.bak/sources/3/settings/url",
+    "basic\\scenes\\Resume_review.json.bak/sources/5/settings/url",
+    "basic\\scenes\\Resume_review.json.bak/sources/6/settings/url",
+    "plugin_config\\obs-websocket\\config.json/server_password"
+  ],
+  "excluded": [
+    "Browser cache, cookies, login sessions, and browser profiles",
+    "Stream keys, account tokens, account details, and WebSocket passwords",
+    "Network URLs and custom browser docks (may contain credentials)",
+    "Logs, crashes, updater caches, and service compatibility caches",
+    "Plugin binaries, VST binaries, and recording/media videos"
+  ]
+}

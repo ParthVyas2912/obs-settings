@@ -1,0 +1,532 @@
+{
+  "current_scene": "Phone camera + mike",
+  "current_program_scene": "Phone camera + mike",
+  "scene_order": [
+    {
+      "name": "Phone camera + mike"
+    }
+  ],
+  "name": "live stream face cam",
+  "sources": [
+    {
+      "prev_ver": 503316482,
+      "name": "Moano audio",
+      "uuid": "a9a781fd-39a3-41ee-87bb-5dbf5f2e4c3a",
+      "id": "wasapi_input_capture",
+      "versioned_id": "wasapi_input_capture",
+      "settings": {
+        "device_id": "{0.0.1.00000000}.{636ca97c-3678-414c-9972-35439f187ef5}"
+      },
+      "mixers": 255,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1.0,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "hotkeys": {
+        "libobs.mute": [],
+        "libobs.unmute": [],
+        "libobs.push-to-mute": [],
+        "libobs.push-to-talk": []
+      },
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "private_settings": {
+        "mixer_hidden": false
+      },
+      "filters": [
+        {
+          "prev_ver": 503316482,
+          "name": "Noise Suppression",
+          "uuid": "3474c64d-bdbd-48eb-b605-a813d2e3e0bf",
+          "id": "noise_suppress_filter",
+          "versioned_id": "noise_suppress_filter_v2",
+          "settings": {},
+          "mixers": 255,
+          "sync": 0,
+          "flags": 0,
+          "volume": 1.0,
+          "balance": 0.5,
+          "enabled": true,
+          "muted": false,
+          "push-to-mute": false,
+          "push-to-mute-delay": 0,
+          "push-to-talk": false,
+          "push-to-talk-delay": 0,
+          "hotkeys": {},
+          "deinterlace_mode": 0,
+          "deinterlace_field_order": 0,
+          "monitoring_type": 0,
+          "private_settings": {}
+        },
+        {
+          "prev_ver": 503316482,
+          "name": "Limiter",
+          "uuid": "83760130-bb4e-4457-9f9a-6447a9d862ec",
+          "id": "limiter_filter",
+          "versioned_id": "limiter_filter",
+          "settings": {
+            "threshold": -3.0,
+            "release_time": 172
+          },
+          "mixers": 255,
+          "sync": 0,
+          "flags": 0,
+          "volume": 1.0,
+          "balance": 0.5,
+          "enabled": true,
+          "muted": false,
+          "push-to-mute": false,
+          "push-to-mute-delay": 0,
+          "push-to-talk": false,
+          "push-to-talk-delay": 0,
+          "hotkeys": {},
+          "deinterlace_mode": 0,
+          "deinterlace_field_order": 0,
+          "monitoring_type": 0,
+          "private_settings": {}
+        },
+        {
+          "prev_ver": 503316482,
+          "name": "Compressor",
+          "uuid": "b11d3cbb-6d22-40f0-8e07-b756d4c32a34",
+          "id": "compressor_filter",
+          "versioned_id": "compressor_filter",
+          "settings": {
+            "ratio": 4,
+            "threshold": -18.0,
+            "attack_time": 9,
+            "release_time": 124,
+            "output_gain": 2.0
+          },
+          "mixers": 255,
+          "sync": 0,
+          "flags": 0,
+          "volume": 1.0,
+          "balance": 0.5,
+          "enabled": true,
+          "muted": false,
+          "push-to-mute": false,
+          "push-to-mute-delay": 0,
+          "push-to-talk": false,
+          "push-to-talk-delay": 0,
+          "hotkeys": {},
+          "deinterlace_mode": 0,
+          "deinterlace_field_order": 0,
+          "monitoring_type": 0,
+          "private_settings": {}
+        },
+        {
+          "prev_ver": 503316482,
+          "name": "EQ",
+          "uuid": "a1f9078c-0e7b-4dd8-827f-b2b802e55165",
+          "id": "vst_filter",
+          "versioned_id": "vst_filter",
+          "settings": {
+            "chunk_hash": "2451601f7ad334019cb28d4c0b4a3aa6",
+            "open_when_active_vst_settings": false,
+            "plugin_path": "C:/Program Files/Common Files/VST2/Voxengo/Marvel GEQ.dll",
+            "chunk_data": "AAAAAAAAAAAAAAAAAAAAAGFwcnOuBwAAtgDRAnheE2dgYDA0s0i0cirKTM8oSS1SSMxLUXBKLC6u5AdK8QJxUmUBkKubmpeYlJNqDRSQBuLE0pTMfL3c/BTfxMw8PRQljEBpEGaA0jA2CHAAcXpRfmlBcWqOGZAthmEUTBafKSBXZeYVlyTmJafq5iXmprozYHMVihKYGdgwsh0yILPzdQsSixJzi/WSMxLz8lJzdMGu0i3Oz8n3AsprYVqFRwc+n4ii2AbRA3Jt8S2ghDIea5CUovuGA4nNBsTBIa5Brv5MUBFmIHbXNWJG4RqzoHBNWFG4pmwoXDN2FK45BwrXAsZlggqBjGaFOgWkEyQvxIDh7cy89AqgqAIDAT8D1aEHKAcDLvDBHpVmcEClOeC0FAOyizLzdGHxCA7iNKCsBgNul6GrR48SJjS+D7JAEIwDokXQ3QH0cwnQz1VAcSX8LoCqxB06GKFANECNr9xiICuzqJhQfMHUER9fxAPUjAP0Ocz71Qz4Mw6SUlqEFKgUQlhWnJFfrpuYkwNLHcWeQGlNBtyuw9CA7kYYGwRAsQI2oqgsNcfdNVAvHWhY8Q4GbLGCqQ7dZAEgvvTf+F63FKMDjP5yR2pLVSiDw7Z7s5znqjI4BHE/t+U499s+KOfF/27zH/Y7ZuXvPxz+EScNU3dg7b7w3ZO/2f/8mvWCc91bexnT/8fzz7yxfxnxx2Vyym977ofrzl04+tdeDMNH0NrAyAUoo0LAVzC1uMPsgz0/xAb/0hJ3cG0DJGyBQrLYjEZWhM1MsyPZ809+/mjPDWQXFKUWp5aAc384kCuJYR6SAuSSAB2D4hSzKobJAgBFH5nS"
+          },
+          "mixers": 255,
+          "sync": 0,
+          "flags": 0,
+          "volume": 1.0,
+          "balance": 0.5,
+          "enabled": true,
+          "muted": false,
+          "push-to-mute": false,
+          "push-to-mute-delay": 0,
+          "push-to-talk": false,
+          "push-to-talk-delay": 0,
+          "hotkeys": {},
+          "deinterlace_mode": 0,
+          "deinterlace_field_order": 0,
+          "monitoring_type": 0,
+          "private_settings": {}
+        }
+      ]
+    },
+    {
+      "prev_ver": 503316482,
+      "name": "Phone camera + mike",
+      "uuid": "3a01d525-acf0-47a0-b5d3-fd7ad7893d79",
+      "id": "scene",
+      "versioned_id": "scene",
+      "settings": {
+        "custom_size": false,
+        "id_counter": 34,
+        "items": [
+          {
+            "name": "Moano audio",
+            "source_uuid": "a9a781fd-39a3-41ee-87bb-5dbf5f2e4c3a",
+            "visible": true,
+            "locked": false,
+            "rot": 0.0,
+            "pos": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "align": 5,
+            "bounds_type": 0,
+            "bounds_align": 0,
+            "bounds": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crop_left": 0,
+            "crop_top": 0,
+            "crop_right": 0,
+            "crop_bottom": 0,
+            "id": 6,
+            "group_item_backup": false,
+            "scale_filter": "disable",
+            "blend_method": "default",
+            "blend_type": "normal",
+            "show_transition": {
+              "duration": 0
+            },
+            "hide_transition": {
+              "duration": 0
+            },
+            "private_settings": {}
+          },
+          {
+            "name": "Video Capture Device",
+            "source_uuid": "e91a587c-871d-4715-9357-139bde562188",
+            "visible": true,
+            "locked": false,
+            "rot": 0.0,
+            "pos": {
+              "x": -63.0,
+              "y": 0.0
+            },
+            "scale": {
+              "x": 0.5367187261581421,
+              "y": 0.5365740656852722
+            },
+            "align": 5,
+            "bounds_type": 0,
+            "bounds_align": 0,
+            "bounds": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crop_left": 0,
+            "crop_top": 0,
+            "crop_right": 0,
+            "crop_bottom": 0,
+            "id": 24,
+            "group_item_backup": false,
+            "scale_filter": "disable",
+            "blend_method": "default",
+            "blend_type": "normal",
+            "show_transition": {
+              "duration": 0
+            },
+            "hide_transition": {
+              "duration": 0
+            },
+            "private_settings": {}
+          },
+          {
+            "name": "Text (GDI+)",
+            "source_uuid": "87490997-419e-4a3b-be50-0c418b10fe3f",
+            "visible": true,
+            "locked": false,
+            "rot": 0.0,
+            "pos": {
+              "x": 34.0,
+              "y": 939.0
+            },
+            "scale": {
+              "x": 1.816901445388794,
+              "y": 1.814814805984497
+            },
+            "align": 5,
+            "bounds_type": 0,
+            "bounds_align": 0,
+            "bounds": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crop_left": 0,
+            "crop_top": 0,
+            "crop_right": 0,
+            "crop_bottom": 0,
+            "id": 28,
+            "group_item_backup": false,
+            "scale_filter": "disable",
+            "blend_method": "default",
+            "blend_type": "normal",
+            "show_transition": {
+              "duration": 0
+            },
+            "hide_transition": {
+              "duration": 0
+            },
+            "private_settings": {}
+          },
+          {
+            "name": "Window Capture 2",
+            "source_uuid": "45e44193-ee71-41a1-b4af-e65d3c4516e6",
+            "visible": true,
+            "locked": false,
+            "rot": 0.0,
+            "pos": {
+              "x": 1221.0,
+              "y": 25.0
+            },
+            "scale": {
+              "x": 1.1366666555404663,
+              "y": 1.138075351715088
+            },
+            "align": 5,
+            "bounds_type": 0,
+            "bounds_align": 0,
+            "bounds": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crop_left": 0,
+            "crop_top": 153,
+            "crop_right": 0,
+            "crop_bottom": 55,
+            "id": 34,
+            "group_item_backup": false,
+            "scale_filter": "disable",
+            "blend_method": "default",
+            "blend_type": "normal",
+            "show_transition": {
+              "duration": 0
+            },
+            "hide_transition": {
+              "duration": 0
+            },
+            "private_settings": {}
+          }
+        ]
+      },
+      "mixers": 0,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1.0,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "hotkeys": {
+        "OBSBasic.SelectScene": [],
+        "libobs.show_scene_item.6": [],
+        "libobs.hide_scene_item.6": [],
+        "libobs.show_scene_item.24": [],
+        "libobs.hide_scene_item.24": [],
+        "libobs.show_scene_item.28": [],
+        "libobs.hide_scene_item.28": [],
+        "libobs.show_scene_item.34": [],
+        "libobs.hide_scene_item.34": []
+      },
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "private_settings": {}
+    },
+    {
+      "prev_ver": 503316482,
+      "name": "Video Capture Device",
+      "uuid": "e91a587c-871d-4715-9357-139bde562188",
+      "id": "dshow_input",
+      "versioned_id": "dshow_input",
+      "settings": {
+        "video_device_id": "OBSBOT Tiny 2 Lite StreamCamera:\\\\?\\usb#22vid_3564&pid_fef9&mi_00#228&658413b&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+        "last_video_device_id": "OBSBOT Tiny 2 Lite StreamCamera:\\\\?\\usb#22vid_3564&pid_fef9&mi_00#228&658413b&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+        "resolution": "3840x2160",
+        "last_resolution": "3840x2160",
+        "res_type": 1,
+        "autorotation": true
+      },
+      "mixers": 255,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1.0,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "hotkeys": {
+        "libobs.mute": [],
+        "libobs.unmute": [],
+        "libobs.push-to-mute": [],
+        "libobs.push-to-talk": []
+      },
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "private_settings": {}
+    },
+    {
+      "prev_ver": 503316482,
+      "name": "Text (GDI+)",
+      "uuid": "87490997-419e-4a3b-be50-0c418b10fe3f",
+      "id": "text_gdiplus",
+      "versioned_id": "text_gdiplus_v2",
+      "settings": {
+        "outline": true,
+        "chatlog": false,
+        "extents": false,
+        "undo_uuid": "87490997-419e-4a3b-be50-0c418b10fe3f",
+        "text": " Let's talk tech careers",
+        "font": {
+          "face": "Arial",
+          "style": "Regular",
+          "size": 48,
+          "flags": 0
+        },
+        "opacity": 100,
+        "bk_color": 4294901930,
+        "bk_opacity": 70,
+        "outline_size": 3,
+        "outline_color": 4278190080,
+        "chatlog_lines": 6,
+        "extents_wrap": true,
+        "antialiasing": true
+      },
+      "mixers": 0,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1.0,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "hotkeys": {},
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "private_settings": {}
+    },
+    {
+      "prev_ver": 503316482,
+      "name": "Window Capture 2",
+      "uuid": "45e44193-ee71-41a1-b4af-e65d3c4516e6",
+      "id": "window_capture",
+      "versioned_id": "window_capture",
+      "settings": {
+        "window": "studio.youtube.com/live_chat?is_popout=1&v=-2IaYGNu2AE - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+      },
+      "mixers": 0,
+      "sync": 0,
+      "flags": 0,
+      "volume": 1.0,
+      "balance": 0.5,
+      "enabled": true,
+      "muted": false,
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "hotkeys": {},
+      "deinterlace_mode": 0,
+      "deinterlace_field_order": 0,
+      "monitoring_type": 0,
+      "private_settings": {}
+    }
+  ],
+  "groups": [],
+  "quick_transitions": [
+    {
+      "name": "Cut",
+      "duration": 300,
+      "hotkeys": [],
+      "id": 7,
+      "fade_to_black": false
+    },
+    {
+      "name": "Fade",
+      "duration": 300,
+      "hotkeys": [],
+      "id": 8,
+      "fade_to_black": false
+    },
+    {
+      "name": "Fade",
+      "duration": 300,
+      "hotkeys": [],
+      "id": 9,
+      "fade_to_black": true
+    }
+  ],
+  "transitions": [
+    {
+      "name": "Move",
+      "id": "move_transition",
+      "settings": {
+        "transition_match": "None",
+        "transition_in": "None",
+        "transition_out": "None"
+      }
+    }
+  ],
+  "saved_projectors": [],
+  "current_transition": "Move",
+  "transition_duration": 500,
+  "preview_locked": false,
+  "scaling_enabled": false,
+  "scaling_level": 0,
+  "scaling_off_x": 0.0,
+  "scaling_off_y": 0.0,
+  "virtual-camera": {
+    "type2": 3
+  },
+  "modules": {
+    "scripts-tool": [
+      {
+        "path": "C:/Users/parth/Desktop/destination faang/live/custom pulse.lua",
+        "settings": {}
+      }
+    ],
+    "output-timer": {
+      "streamTimerHours": 0,
+      "streamTimerMinutes": 0,
+      "streamTimerSeconds": 30,
+      "recordTimerHours": 0,
+      "recordTimerMinutes": 0,
+      "recordTimerSeconds": 30,
+      "autoStartStreamTimer": false,
+      "autoStartRecordTimer": false,
+      "pauseRecordTimer": true
+    },
+    "auto-scene-switcher": {
+      "interval": 300,
+      "non_matching_scene": "",
+      "switch_if_not_matching": false,
+      "active": false,
+      "switches": []
+    },
+    "captions": {
+      "source": "",
+      "enabled": false,
+      "lang_id": 1033,
+      "provider": "mssapi"
+    }
+  }
+}

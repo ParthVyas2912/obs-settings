@@ -1,0 +1,6 @@
+{
+  "rate_control": "CBR",
+  "cqp": 17,
+  "bitrate": 6000,
+  "keyint_sec": 0
+}

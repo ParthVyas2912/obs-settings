@@ -1,0 +1,13 @@
+[
+  {
+    "display_name": "Move Transition",
+    "enabled": true,
+    "encoders": [],
+    "id": "",
+    "module_name": "move-transition",
+    "outputs": [],
+    "services": [],
+    "sources": [],
+    "version": ""
+  }
+]

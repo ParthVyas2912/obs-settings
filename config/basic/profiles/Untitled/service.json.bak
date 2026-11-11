@@ -1,0 +1,8 @@
+{
+  "type": "rtmp_common",
+  "settings": {
+    "service": "YouTube - RTMPS",
+    "server": "about:blank",
+    "protocol": "RTMPS"
+  }
+}
